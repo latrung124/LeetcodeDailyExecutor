@@ -6,7 +6,6 @@
 */
 
 #include "problem_solver_manager.h"
-#include "leetcode.h"
 
 #include <iostream>
 
@@ -30,4 +29,10 @@ void ProblemSolverManager::runAll() {
 void ProblemSolverManager::runTestsForProblem(const LeetcodeNumberEnum &num)
 {
     auto it = problemMap.find(num);
+    if (it == problemMap.end()) {
+        std::cout << "Problem " << static_cast<uint16_t>(num) << " not found\n";
+        return;
+    }
+    std::vector<std::string> dummyInput = {"1,2,-3"}; // Replace with actual test case loading
+    it->second->solve(dummyInput);
 }

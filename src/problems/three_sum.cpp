@@ -15,10 +15,8 @@ ThreeSumProblem::ThreeSumProblem()
 {
 }
 
-std::vector<std::vector<int>> ThreeSumProblem::Solution::threeSum(std::vector<int>& nums)
+ThreeSumProblem::~ThreeSumProblem()
 {
-    // Implement the three-sum logic here
-    return {};
 }
 
 std::string ThreeSumProblem::solve(const std::vector<std::string>& input) {

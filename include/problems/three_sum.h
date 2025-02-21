@@ -20,13 +20,15 @@ private:
     class Solution
     {
     public:
-        std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
+        Solution() = default;
+        ~Solution() = default;
+        std::vector<std::vector<int>> threeSum(std::vector<int>& nums) { return {}; }
     };
-
-    ThreeSumProblem();
 
     std::unique_ptr<Solution> solutionUPtr = nullptr;
 public:
+    ThreeSumProblem();
+    ~ThreeSumProblem();
     std::string solve(const std::vector<std::string> &input) override;
 };
 

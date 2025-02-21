@@ -13,5 +13,8 @@
 int main()
 {
     std::cout << "Hello, World! \n";
+    ProblemSolverManager manager("testcase");
+    manager.addProblem(std::make_unique<ThreeSumProblem>());
+    manager.runAll();
     return 0;
 }

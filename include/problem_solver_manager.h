@@ -8,12 +8,11 @@
 #ifndef PROBLEM_SOLVER_MANAGER_H
 #define PROBLEM_SOLVER_MANAGER_H
 
+#include "leetcode.h"
+
 #include <memory>
 #include <unordered_map>
 #include <string>
-
-class Leetcode;
-enum class LeetcodeNumberEnum;
 
 class ProblemSolverManager
 {
